@@ -348,25 +348,6 @@ nav a:hover::after {
     opacity: 0.8;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 0.9rem 2.2rem;
-    background: var(--accent-blue);
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s;
-    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
-}
-
-.cta-button:hover {
-    background: #2563eb;
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.5);
-}
-
 /* Services Section */
 .services {
     padding: 6rem 2rem;
@@ -495,26 +476,6 @@ nav a:hover::after {
     flex: 1;
 }
 
-.explore-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    color: var(--primary-blue);
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-decoration: none;
-
-    svg {
-        width: 16px;
-        height: 16px;
-        transition: transform 0.3s;
-    }
-}
-
-.explore-link:hover svg {
-    transform: translate(3px, -3px);
-}
-
 .service-card.highlight {
     background: var(--accent-blue);
 }
@@ -524,8 +485,7 @@ nav a:hover::after {
     color: white;
 }
 
-.service-card.highlight h3,
-.service-card.highlight .explore-link {
+.service-card.highlight h3 {
     color: white;
 }
 
@@ -548,10 +508,6 @@ nav a:hover::after {
 
 .service-card.dark p {
     color: rgba(255, 255, 255, 0.7);
-}
-
-.service-card.dark .explore-link {
-    color: var(--accent-blue);
 }
 
 /* About + Mission & Vision Section */
