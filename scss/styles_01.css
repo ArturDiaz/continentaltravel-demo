@@ -12,6 +12,10 @@
     --pastel-blue: rgb(226, 235, 252);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
@@ -206,7 +210,7 @@ nav a:hover::after {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url("../imagen/headerBanner2.jpg") no-repeat, linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--primary-blue) 100%);
+    background: url("../imagen/headerBanner2-desktop.jpg") no-repeat, linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--primary-blue) 100%);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -247,6 +251,7 @@ nav a:hover::after {
     position: relative;
     z-index: 1;
     max-width: 900px;
+    min-width: 0;
     padding: 2rem;
     animation: fadeInUp 1s ease;
 }
@@ -264,7 +269,7 @@ nav a:hover::after {
 }
 
 .hero-title {
-    font-size: 4.5rem;
+    font-size: clamp(1.9rem, 6vw, 4.5rem);
     font-weight: bold;
     margin-bottom: 1.5rem;
     line-height: 1.2;
@@ -341,13 +346,13 @@ nav a:hover::after {
 
 .cta-button {
     display: inline-block;
-    padding: 1.2rem 3rem;
+    padding: 0.9rem 2.2rem;
     background: var(--accent-blue);
     color: white;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.3s;
     box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
 }
@@ -884,8 +889,8 @@ nav a:hover::after {
 
 .cert-row-arrow {
     flex-shrink: 0;
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
@@ -894,17 +899,17 @@ nav a:hover::after {
     color: white;
     transition: all 0.3s;
     .bs-icon {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         margin: 0;
     }
     img {
-        width: 26px;
+        width: 36px;
     }
 }
 
 .cert-row-arrow-text {
     font-weight: 800;
-    font-size: 0.85rem;
+    font-size: 1.05rem;
     letter-spacing: 0.02em;
 }
 
@@ -977,6 +982,7 @@ nav a:hover::after {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    min-width: 0;
 }
 
 .faq-item {
@@ -1002,6 +1008,10 @@ nav a:hover::after {
     color: var(--primary-blue);
     cursor: pointer;
     font-family: inherit;
+}
+
+.faq-question > span:not(.faq-icon) {
+    min-width: 0;
 }
 
 .faq-icon {
@@ -1044,6 +1054,7 @@ nav a:hover::after {
     color: #64748b;
     line-height: 1.7;
     margin: 0;
+    overflow-wrap: break-word;
 }
 
 .faq-item.active {
@@ -1212,10 +1223,6 @@ footer {
 
 /* Responsive */
 @media (max-width: 968px) {
-    .hero-title {
-        font-size: 3rem;
-    }
-
     .menu-toggle {
         display: flex;
     }
@@ -1308,12 +1315,13 @@ footer {
 }
 
 @media (max-width: 640px) {
-    .hero-title {
-        font-size: 2.2rem;
+    .hero {
+        background-image: url("../imagen/headerBanner2-mobile.jpg"), linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--primary-blue) 100%);
     }
 
     .hero-actions {
         flex-direction: column;
+        align-items: flex-start;
         gap: 1.2rem;
     }
 
@@ -1343,16 +1351,18 @@ footer {
         font-size: 0.65rem;
     }
 
-    .stat-item {
-        width: 100%;
-    }
-
     .cert-row-text h3 {
         font-size: 1.25rem;
     }
 
     .cert-row-arrow {
-        width: 40px;
-        height: 40px;
+        width: 52px;
+        height: 52px;
+        .bs-icon {
+            font-size: 1.5rem;
+        }
+        img {
+            width: 30px;
+        }
     }
 }
