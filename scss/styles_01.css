@@ -12,8 +12,20 @@
     --pastel-blue: rgb(226, 235, 252);
 }
 
-html {
-    overflow-x: hidden;
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+#inicio,
+#servicios,
+#nosotros,
+#tecnologia,
+#contacto,
+#TerminosCondiciones,
+#PoliticaPrivacidad {
+    scroll-margin-top: 90px;
 }
 
 body {

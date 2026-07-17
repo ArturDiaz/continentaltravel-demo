@@ -226,17 +226,6 @@
                 $('body').removeClass('menu-open');
             });
 
-            // Smooth scroll
-            $('a[href^="#"]').on('click', function (e) {
-                e.preventDefault();
-                var target = $(this.getAttribute('href'));
-                if (target.length) {
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 80
-                    }, 1000);
-                }
-            });
-
             // Header scroll effect
             $(window).on('scroll', function () {
                 if ($(window).scrollTop() > 50) {
