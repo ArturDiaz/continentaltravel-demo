@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, FreeSans, sans-serif;
+    color: #444;
+    line-height: 1.5;
+}
+.collapse{
+    height: 0;
+    display: none;
+    overflow: hidden;
+}
+.collapse.in{
+    display: block;
+    height: auto;
+    overflow: visible;
+}
+.collapsing{
+    position: relative;
+    height: 0;
+    display: block;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+.width-responsive{
+    width: 90%;
+    margin: auto;
+}
+@media (min-width:820px){
+    .width-responsive{
+        width: 90%;
+    }
+}
+@media (min-width:1200px){
+    .width-responsive{
+        width: 1100px;
+    }
+}
+.flex-r{
+    display: flex;
+    flex-direction: row;
+}
+.flex-c,
+.flex-c_grid{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:820px){
+    .flex-c_grid{
+        display: grid;
+    }
+}
+.ai-c{
+    align-items: center;
+}
+.cl-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+.gap-5{
+    gap: 5px;
+}
+.gap-20{
+    gap: 20px;
+}
+.icons-svg{
+	/*font-size: 1.5em;*/
+    stroke-width: 7%;
+    /*max-width: 47rem;*/
+	
+	.bs-icon{
+		display: inline-block;
+		fill: none;
+		margin: 0.2em;
+		font-size: 1em;
+		width: 1em;
+		stroke: currentColor;
+		stroke-width: inherit;
+		stroke-linecap: inherit;
+		stroke-linejoin: inherit;
+		overflow: visible;
+	}
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    padding: 30px 0;
+    h1{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+section{
+    article{
+        padding: 30px 0;
+        position: relative;
+        h2{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        h3{
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        ul{
+            margin-bottom: 20px;
+        }
+        ul li{
+            margin-left: 30px;
+            margin-top: 2px;
+            font-size: 14px;
+        }
+        &:before{
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: #eee;
+            position: absolute;
+        }
+        &:before{
+            top: 0;
+        }
+    }
+
+    card{
+        .item-card{
+            width: 100%;
+            height: fit-content;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: left;
+            div{
+                padding: 20px;
+                padding-top: 0;
+            }
+        }
+        button{
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            span{
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,450 @@
+@import url("servicios.css");
+@import url("acercaNosotros.css");
+@import url("tecnologia.css");
+@import url("contador.css");
+@import url("contacto.css");
+@import url("footer.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  scroll-behavior: smooth;
+  width: 100% !important;
+}
+
+ul li {
+  list-style: inside;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.text-j {
+  text-align: justify;
+}
+
+.bg-blue {
+  background: rgba(5, 1, 74, 0.9098039216);
+}
+
+.icons-svg {
+  /*font-size: 1.5em;*/
+  stroke-width: 7%;
+  /*max-width: 47rem;*/
+}
+.icons-svg .bs-icon {
+  display: inline-block;
+  fill: none;
+  margin: 0.2em;
+  font-size: 1em;
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  stroke-width: inherit;
+  stroke-linecap: inherit;
+  stroke-linejoin: inherit;
+  overflow: visible;
+  box-sizing: initial;
+}
+.icons-svg .bs-logos {
+  display: inline-block;
+  fill: none;
+  font-size: 1em;
+  width: 1em;
+  stroke: currentColor;
+  stroke-width: inherit;
+  stroke-linecap: inherit;
+  stroke-linejoin: inherit;
+  overflow: visible;
+  height: 0.5em;
+}
+
+/* Iconos */
+.icons-mvdv {
+  font-size: 1em;
+  stroke-width: 4%;
+  max-width: 47rem;
+  color: var(--c-scale-70);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.icons-mvdv .i-hover {
+  color: var(--c-action);
+  transform: translateY(140px);
+}
+
+.icons-mvdv .ico-whatsapp {
+  color: var(--c-blanco);
+}
+
+.icons-item {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0.2em;
+  width: 1em;
+  stroke: currentColor;
+  stroke-width: inherit;
+  stroke-linecap: inherit;
+  stroke-linecap: inherit;
+  overflow: visible;
+  fill: none;
+  max-width: 100%;
+}
+
+.icons-item-bg {
+  display: inline-block;
+  font-size: 2em;
+  margin: 0.2em;
+  width: 1em;
+  stroke: none;
+  max-width: 100%;
+}
+
+.c-white {
+  color: white;
+}
+
+#pages-legales #fixHed, #pages-legales nav {
+  position: static !important;
+  width: 100%;
+}
+
+header {
+  padding: 25px 15%;
+}
+header.banner-home {
+  height: 500px;
+  background: url("/imagen/headerBanner2.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  -webkit-background-position: center center;
+  -moz-background-position: center center;
+  -o-background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+}
+header .logoCont {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+header .logoCont img {
+  width: 90px;
+}
+header .logoCont #btnHeaderVc {
+  border: 2px solid #da6207 !important;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 7px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 2px 7px black;
+  transform: translateY(7px);
+}
+header .logoCont #btnHeaderVc:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+header .logoCont .fono {
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+  transform: translateY(2px);
+}
+header .fixHed {
+  width: 70%;
+  position: fixed;
+  z-index: 30000;
+  transition: all 0.5s;
+}
+header #iconMenu {
+  display: none;
+}
+header .menuDespl, header label {
+  display: none;
+}
+header hr {
+  margin: 15px 0 5px 0;
+  border: 0.5px solid rgba(230, 230, 230, 0.4);
+  display: none;
+}
+header nav {
+  position: fixed;
+  left: 0;
+  right: auto;
+  transform: translateX(-100%);
+}
+@media (min-width: 1024px) {
+  header nav {
+    transform: translateX(0%);
+    width: 100%;
+  }
+}
+header nav .menuInc {
+  display: flex;
+  justify-content: space-around;
+}
+header nav .menuInc li {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  margin: 25px 0px;
+  position: relative;
+  transition: all 0.35s;
+}
+header nav .menuInc li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+header nav .menuInc li:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+header nav .menuInc li span {
+  width: 100%;
+  height: 0px;
+  padding: 15px 0;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+header nav .menuInc hr {
+  margin-top: 8px;
+}
+header nav .menuInc li:hover:before {
+  content: "";
+  cursor: pointer;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+header nav .menuInc li:hover span {
+  width: 100%;
+  height: 10px;
+  transition: all 0.2s;
+  background: rgba(255, 255, 255, 0.2);
+}
+header nav #btn_6vc {
+  color: #fff;
+  display: none;
+}
+header nav #btn_6vc a {
+  text-decoration: none;
+}
+header .headerCont {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(250px);
+}
+header .headerCont h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+}
+header .headerCont .botnsPrinc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+header .headerCont #misvacaciones, header .headerCont #vermas {
+  padding: 8px 30px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 2px 7px black;
+}
+header .headerCont #misvacaciones {
+  background: #DA6207;
+  color: #fff;
+}
+header .headerCont #vermas {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+}
+header .headerCont #misvacaciones:hover, header .headerCont #vermas:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 992px) {
+  header, .acercaNosotros, .reconocimiento, .tecnologia, .viajPlant, .contFoot {
+    padding: 25px 5%;
+  }
+  header .fixHed, .acercaNosotros .fixHed, .reconocimiento .fixHed, .tecnologia .fixHed, .viajPlant .fixHed, .contFoot .fixHed {
+    width: 90%;
+  }
+}
+@media (max-width: 640px) {
+  header .logoCont {
+    justify-content: center !important;
+  }
+  header .logoCont .fono {
+    display: none;
+  }
+  header {
+    /**/
+  }
+  header .fixHed {
+    position: fixed;
+    z-index: 50000;
+    background: rgba(5, 1, 74, 0.9098039216);
+    box-shadow: 0 2px 5px black;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+  header #btnHeaderVc {
+    display: none;
+  }
+  header nav {
+    background: rgba(5, 1, 74, 0.9);
+    width: 100%;
+    height: 100vh;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+  }
+  header nav .menuInc {
+    flex-direction: column;
+    cursor: pointer;
+  }
+  header nav .menuInc li {
+    padding: 0px 0;
+    margin: 25px 0px;
+  }
+  header nav .menuInc li span {
+    padding-left: 15px;
+    justify-content: start;
+  }
+  header nav #btn_6vc {
+    padding: 15px 150px;
+    background: #DA6207;
+    border-radius: 0 0 50px 50px !important;
+  }
+  header nav #btn_6vc:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  header .menuDespl {
+    display: flex;
+    float: right;
+    font-size: 30px;
+    transform: translateY(-50px);
+  }
+  header label {
+    display: flex;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+  }
+  header label .btn_men {
+    font-size: 40px !important;
+  }
+  header label .btn_men:before, header label .btn_men:after {
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+  }
+  header label .btn_men:before {
+    top: 12px;
+    left: 0;
+  }
+  header label .btn_men:after {
+    top: 24px;
+    left: 0;
+  }
+  header label:active .btn_men {
+    transform: rotate(10deg);
+  }
+  header .headerCont {
+    transform: translateY(200px);
+  }
+  header .headerCont #misvacaciones, header .headerCont #vermas {
+    width: 100%;
+    margin: 10px;
+  }
+  .animacionH:before {
+    display: none;
+  }
+}
+.traslate-x {
+  transform: translateX(0%);
+  transition: all 0.3s ease;
+}
+
+.Mvacaciones {
+  display: none;
+}
+
+.animacion {
+  top: 0;
+  transition: all 0.5s;
+}
+
+.animacionH:before {
+  content: "";
+  width: 100%;
+  height: 120px;
+  background: rgba(5, 1, 74, 0.9098039216);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  box-shadow: 0 2px 6px black;
+}
+
+.seleccionado {
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  /*display: flex;
+  justify-content: space-around;*/
+  border-radius: 0 0 15px 15px;
+  transition: all 0.2s;
+}
+
+/*# sourceMappingURL=estilos.css.map */

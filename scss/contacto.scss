@@ -1,0 +1,156 @@
+$blanco : #fff;
+$griss: rgba(230, 230, 230, 1);
+$plomClar: rgb(128, 128, 128, 0.8);
+$azul: #003A8F;
+$azulTrs: rgba(0, 57, 143, 0.5);
+$plomo: #4D4D4D;
+$naranja: #DA6207;
+$naranjaTrs: rgba(218, 98, 7, 1);
+
+
+.contact{
+    background: url("../imagen/contactosBanr.png");
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    //position: relative;
+    
+    .formul{
+        background: $blanco;
+        width: 400px;
+        box-shadow: 0 0 5px rgba($plomClar,0.5);
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        border-top: 2px solid $naranja;
+        border-bottom: 2px solid $naranja;
+        padding: 45px;
+        z-index: 50;
+
+        .registForm{
+            height: 100%;
+            color: $plomo;
+            margin: 25px;
+
+            display: flex;
+            flex-direction: column;
+
+            .opCon{
+                margin: 5px 0;
+                outline-style: none;
+                border-style: none;
+            }
+            .opConM{
+                padding: 0 25px;
+                margin: -2px;
+                font-size: 10px;
+                color: $naranja;
+            }
+            #btnEnviar{
+                padding: 10px 0;
+                margin-top: 25px;
+                border-radius: 25px;
+                background: $plomo;
+                color: $blanco;
+                transition: all 0.2s;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+            }
+            #btnEnviar:hover{
+                background: $plomClar;
+                transition: all 0.2s;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+
+                cursor: pointer;
+            }
+            h1{
+                text-align: center;
+            }
+            label{
+                padding: 0 25px;
+            }
+            input, textarea {
+                border-bottom: 1px solid $plomClar !important ;
+                padding: 3px 25px;
+            }
+            ::-webkit-input-placeholder{
+                font-size: 12px;
+                color: $plomClar;
+            }
+            ::-ms-input-placeholder{
+                font-size: 12px;
+                color: $plomClar;
+            }
+            ::-moz-input-placeholder{
+                font-size: 12px;
+                color: $plomClar;
+            }
+            :-moz-input-placeholder{
+                font-size: 12px;
+                color: $plomClar;
+                
+            }
+        }
+    }
+    
+}
+
+.redesSociales{
+    //width: 100%;
+    height: 150px;
+    background: $blanco;
+    display: flex;
+    
+    .fond{
+        padding: 0 15%;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background: $griss;
+        align-self: center;
+        justify-content: center;
+        .iconos, .fond-t{
+            align-self: center;
+        }
+        i{
+            font-size: 20px;
+            align-self: center;
+            color: $plomo;
+            cursor: pointer;
+            margin-right: 5px;
+            filter: opacity(0.5);
+        }
+        .icon-rss, .icon-phone{
+            font-size: 18px;
+        }
+        i:hover{
+            filter: opacity(1);
+        }
+    }
+}
+
+
+
+@media (max-width: 550px){
+    #contactanos{
+        width: 100% !important;
+        
+    }
+   .contact{
+        margin: 15px 0 !important;
+       .formul{
+            width: 70% !important;
+            padding: 20px !important;
+        
+            .registForm{
+                margin: 0px !important;
+            }
+        }
+
+    }
+    
+}

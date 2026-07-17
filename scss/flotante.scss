@@ -1,0 +1,127 @@
+$blanco : #fff;
+$azulOsc: rgb(0, 9, 87);
+$rojo: #ff0000;
+
+.flotante{
+    background: url("../imagen/flotVc.png");
+    background-size: cover;
+    width: 380px;
+    height: 195px;
+    padding: 14px;
+    //box-shadow: 1px 1px 3px rgba($azulOsc, 0.7);
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: -256%;
+    margin: auto;
+    filter: drop-shadow(3px 3px 5px rgba($azulOsc,0.5));
+
+    z-index: 70000;
+    transition: all 1s;
+
+
+    .misvacaciones{
+        display: flex;
+        flex-direction: column;
+
+        .btnVacT{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 160px;
+            margin-left: 50px; 
+            
+            .btnFlot{
+                width: 50%;
+                font-size: 18px;
+                background: none;
+                padding: 2px;
+                border-style: none;
+                cursor: pointer;
+                color: $blanco;
+                
+                a{
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: $blanco;
+                    background: $rojo;
+                    padding: 5px 24px;
+                    margin-left: 0px;
+                    transition: all 0.3s;
+                }
+            }
+            .cerrarFlot{
+                width: 35% !important;
+                border: 1px solid $blanco;
+                transition: all 0.3s;
+            }
+            a:hover{
+                background: rgba($blanco,0.4);
+                transition: all 0.3s;
+            }
+            .cerrarFlot:hover{
+                transition: all 0.3s;
+                background: rgba($blanco,0.5);
+            }
+        }
+    }
+}
+
+.mostrar{
+    //transform: translateX(-280px);
+    right: -62%;
+    transition: all 1s;
+}
+.cerrarF{
+    
+    //transform: translateX(1450px);
+    right: -200%;
+    transition: all 1s;
+    //display: none;
+}
+
+/*@media (max-width: 1200px){
+    .flotante{
+        right: -2050px;
+    }
+}*/
+@media (max-width: 800px){
+    .flotante{
+        right: -180%;
+        .btnFlot{
+            width: 100%;
+            a{
+                width: 100%;
+                padding: 6px 18px !important;
+            }
+        }
+    }
+    .mostrar{
+        right: -40%;
+        transition: all 1s;
+    }
+    .cerrarF{
+        right: -200%;
+        transition: all 1s;
+    }
+}
+@media (max-width: 550px){
+    .flotante{
+        width: 355px !important;
+        height: 170px !important;
+        top: 60px;
+        right: -300%;
+
+        .btnVacT{
+            margin-top: 150px !important;
+        }
+    }
+    .mostrar{
+        right: 55%;
+        transition: all 1s;
+    }
+    .cerrarF{
+        right: -250%;
+        transition: all 1s;
+    }
+}

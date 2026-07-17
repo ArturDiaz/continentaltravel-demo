@@ -1,0 +1,148 @@
+$blanco : #fff;
+$griss: rgb(138, 138, 138);
+$celeste: #0074FF;
+$azul: #003A8F;
+$azulTrs: rgba(0, 57, 143, 0.171);
+$plomo: #4D4D4D;
+$naranja: #DA6207;
+$naranjaTrs: rgba(218, 98, 7, 0.8);
+
+$imgU1: url("../imagen/usuaIcon.png");
+$imgU2: url("../imagen/usuaIcon2.png");
+$imgV1: url("../imagen/avionIcon.png");
+$imgV2: url("../imagen/avionIcon2.png");
+$imgD1: url("../imagen/edifIcon.png");
+$imgD2: url("../imagen/edifIcon2.png");
+
+$imagen1: url("/imagen/men.jpg");
+$imagen2: url("/imagen/airport.jpg");
+$imagen3: url("/imagen/central-embassy.jpg");
+
+
+.services{
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    -moz-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+
+    font-size: 12px;
+    transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .tarjServ{
+        width: 200px;
+        height: 250px;
+        box-shadow: 0 0 17px rgba($plomo, 0.2);
+        margin: 0 10px;
+        position: relative;
+
+        .imagen1, .imagen2, .imagen3{
+            width: 100%;
+            height: 150px;
+        }
+        .imagen1{
+            background: $imagen2;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+        .imagen2{
+            background: $imagen1;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+
+        }
+        .imagen3{
+            background: $imagen3;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+        .imagen1:hover, .imagen2:hover, .imagen3:hover{
+            filter: saturate(50%);
+            -webkit-filter: saturate(50%);
+        }
+        .iconServ{
+            width: 100%;
+            height: 3px;
+            background: $naranjaTrs;
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        .atenServ{
+            padding: 5px 15px;
+            color: $plomo;
+            h3{
+                font-size: 12px;
+            }
+            h1{
+                font-size: 17px;
+            }
+            p{
+                font-size: 10px;
+                color: $griss;
+                margin-top: 5px;
+            }
+        }
+    }
+    .tarjServ:hover{
+        .iconServ{
+            opacity: 1;
+            transition: all 0.3s;
+        }
+    } 
+}
+
+
+@media (max-width: 550px){
+    #servicios{
+        width: 100%;
+    }
+    .services{
+
+        .tarjServ{
+            width: 150px !important;
+            height: 230px !important;
+            
+            margin: 0 3px !important;
+            .atenServ{
+                text-align: center;
+                align-self: center;
+                p{
+                    display: none;
+                }
+            }
+
+        }
+        .dis2{
+            width: 120px !important;
+            height: 210px !important;
+            transform: translateY(10px);
+            -webkit-transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            -o-transform: translateY(10px);
+        }
+        .imagen1:hover, .imagen2:hover, .imagen3:hover{
+            filter: saturate(100%) !important;
+            -webkit-filter: saturate(100%) !important;
+        }
+    }
+  
+}

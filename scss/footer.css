@@ -1,0 +1,160 @@
+footer {
+    background: #3d3a6c;
+    padding: 20px 15%;
+}
+
+footer .logoFoo {
+    width: 100px;
+    height: 50px;
+    /* background: #05014a; */
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: -20px auto 0 auto;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+footer .logoFoo img {
+    width: 100px;
+    height: 50px;
+}
+
+footer .logoFoo:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+footer .sedes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #fff;
+    margin: 10px 0;
+}
+
+footer .sedes .ubicSe {
+    width: 340px;
+    height: 100px;
+    padding: 0px;
+    margin: 5px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+footer .sedes .ubicSe img {
+    width: 70px;
+    height: 60px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+footer .sedes .ubicSe .contSeds {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+footer .sedes .ubicSe .contSeds h3 {
+    font-size: 14px;
+    margin-bottom: -5px;
+    font-weight: normal;
+}
+
+footer .sedes .ubicSe .contSeds h1 {
+    font-size: 25px;
+}
+
+footer .sedes .ubicSe .contSeds .sedsTex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 13px;
+}
+
+footer .sedes .ubicSe .contSeds .sedsTex p {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    font-weight: lighter;
+}
+
+footer .sedes .ubicSe .guion {
+    width: 1px;
+    height: 87px;
+    background: #fff;
+    margin-right: 15px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.libro-reclamaciones{
+    height: fit-content;
+    a{
+        color: #fff;
+
+    }
+}
+
+footer .contFoot {
+    color: #fff;
+    padding: 5px 15%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    footer {
+        padding: 25px 5%;
+    }
+    footer .logoFoo {
+        margin-top: -25px;
+    }
+    footer .sedes {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        padding: 30px 5% !important;
+    }
+    footer .logoFoo {
+        margin-top: -30px;
+    }
+    .sedes {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #fff;
+        margin: 10px 0;
+    }
+}
+
+
+/*# sourceMappingURL=footer.css.map */

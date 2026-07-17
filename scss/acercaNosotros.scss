@@ -1,0 +1,327 @@
+$celeste: #0074FF;
+$azul: #003A8F;
+$azulTrs: rgba(0, 57, 143, 0.8);
+$griss: rgba(230, 230, 230, 0.4);
+$griss2:rgb(102, 102, 102);
+$plomo: #4D4D4D;
+$plomo2:rgb(44, 44, 44);
+$naranja: #DA6207;
+$blanco: #fff;
+
+#acercaNosotros{
+    margin-top: -60px;
+}
+.acercaNosotros, .reconocimiento{
+    padding: 0px 15%;
+    
+    
+    h1{
+        text-align: center;
+        color: $azul;
+    }
+    .contnPrinc{
+        padding: 50px 0;
+        
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .fondImg{
+            width: 300px;
+            height: 230px;
+            padding-bottom: 30px;
+            //background: url("../imagen/acercaNost.png");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size:500px 230px;
+        }
+        .parrafoLogo{
+            align-self: center;
+            margin-left: 90px;
+            width: 500px;
+            color: $plomo;
+            h1{
+                text-align: start;
+                padding-left: 30px;
+                margin-bottom: 10px;
+                color: $plomo2;
+                font-size: 20px;
+            }
+            p{
+                border-left: 5px solid $naranja;
+                padding-left: 25px;
+                font-size: 14px;
+
+            }
+            .iconos{
+                padding-top: 10px;
+                padding-left: 20px;
+                display: flex;
+                //justify-content: space-around;
+                
+                img{
+                    width: 30px;
+                    height: 30px;
+                    padding: 0 10px;
+                }
+            }
+        }
+        .imgNstr{
+            align-self: center;
+            width: 300px;
+            height: 230px;
+            filter: drop-shadow(2px 2px 2px rgba($plomo,0.3));
+            -webkit-filter: drop-shadow(2px 2px 2px rgba($plomo,0.3));
+        }
+        
+    }
+}
+
+.reconocimiento{
+
+    height: 100%;
+    background: $griss;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    display: flex;
+    flex-direction: column;
+    .cajaRec1, .cajaRec2, .cajaRec3{
+        width: 100%;
+        height: 400px;
+        margin: 15px 0;
+        position: relative;
+
+        .lineaRec{
+            width: 10px;
+            height: 80px;
+            background: $naranja;
+            position: absolute;
+            top: 0;
+            left: 15px;
+        }
+        .lineaRec2{
+            width: 30px;
+            height: 30px;
+            background: $naranja;
+            position: absolute;
+            top: 0;
+            right: 0px;
+        }
+        .contenRecm1, .contenRecm2, .contenRecm3{
+            background: $blanco;
+            width: 40%;
+            height: 200px;
+            padding: 45px;
+            box-shadow: 0 0 7px rgba($plomo, 0.5);
+            
+            h1{
+                text-align: start;
+                color: $plomo2;
+            }
+            h3{
+                font-size: 14px;
+                color: $plomo;
+            }
+            p{
+                margin: 15px 0;
+                color: $griss2;
+                font-size: 14px;
+            }
+        }
+        .contenRecm1{
+            transform: translateX(80%) translateY(28%);
+            -webkit-transform: translateX(80%) translateY(28%);
+            -moz-transform: translateX(80%) translateY(28%);
+            -o-transform: translateX(80%) translateY(28%);
+        }
+        .contenRecm2{
+            transform: translateX(0%) translateY(13%);
+            -webkit-transform: translateX(0%) translateY(13%);
+            -moz-transform: translateX(0%) translateY(13%);
+            -o-transform: translateX(0%) translateY(13%);
+            .contParr{
+                margin: 15px 0;
+                font-size: 12px;
+                color: $plomo;
+                display: flex;
+                justify-content: space-between;
+    
+                ul{
+                    list-style: none;
+                    position: relative;
+                    li{
+                        padding: 1px 0 1px 15px;
+                    }
+                    li:before{
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-left: 8px solid $naranja;
+                        border-top: 4px solid transparent;
+                        border-bottom: 4px solid transparent;
+                        position: absolute;
+                        left: 0;
+    
+                        margin: 3px 0;
+                    }
+                }
+            }
+        }
+        .contenRecm3{
+            transform: translateX(80%) translateY(0%);
+            -webkit-transform: translateX(80%) translateY(0%);
+            -moz-transform: translateX(80%) translateY(0%);
+            -o-transform: translateX(80%) translateY(0%);
+        }
+    }
+    .cajaRec1{
+        background: url("../imagen/caja1.png");
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        -moz-background-repeat: no-repeat;
+        -o-background-repeat: no-repeat;
+        
+    }
+    .cajaRec2{
+        background: url("../imagen/caja2.png");
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        -moz-background-repeat: no-repeat;
+        -o-background-repeat: no-repeat;
+
+        background-position: 100%;
+        -webkit-background-position: 100%;
+        -moz-background-position: 100%;
+        -o-background-position: 100%;
+    }
+    .cajaRec3{
+        background: url("../imagen/caja3.png");
+        background-size: contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+
+        background-repeat: no-repeat;
+        -webkit-background-repeat: no-repeat;
+        -moz-background-repeat: no-repeat;
+        -o-background-repeat: no-repeat;
+    }
+
+}
+
+@media (max-width: 800px){
+    .contnPrinc{
+        flex-direction: column;
+        padding: 0 5%;
+        position: relative;
+
+        .parrafoLogo{
+            width: 100% !important;
+            margin: 10px 0 !important;
+            .iconos{
+                justify-content: center;
+            }
+        }
+        .fondImg{
+            justify-content: center;
+            
+        }
+        .imgNstr{ 
+            width: 330px !important;
+            height: 260px !important;
+            top: 35px !important;
+            left: 0px !important;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto !important;
+            
+        }
+    }
+}
+
+@media (max-width: 700px){
+    
+    .reconocimiento{
+
+        .contRecn{
+            width: 100% !important;
+            
+        }
+    }
+    
+ }
+
+ @media (max-width: 550px){
+    .acercaNosotros{
+        .contnPrinc{
+            .parrafoLogo{
+                margin-top: 15px !important;
+                .iconos{
+                    justify-content: start;
+                    img{
+                        width: 30px !important;
+                        height: 30px !important;
+                    }
+                }
+            }
+        }
+    }
+    
+    .reconocimiento{
+        
+        .cajaRec1, .cajaRec2, .cajaRec3{         
+            
+            .contenRecm1, .contenRecm2, .contenRecm3{
+                width: 60% !important;
+                height: 170px;
+                margin: 0 0 !important;
+                padding: 40px;
+                h1{
+                    font-size: 16px;
+                }
+                h3{
+                    font-size: 12px;
+                }
+                p{
+                    
+                    margin: 15px 0;
+                    color: $griss2;
+                    font-size: 12px;
+                }
+            }
+            .contenRecm1, .contenRecm3{
+                
+                transform: translateX(40px) translateY(100px) !important;
+                -webkit-transform: translateX(40px) translateY(100px) !important;
+                -moz-transform: translateX(40px) translateY(100px) !important;
+                -o-transform: translateX(40px) translateY(100px) !important;
+            }
+            .contenRecm2{
+                transform: translateX(40px) translateY(150px) !important;
+                -webkit-transform: translateX(40px) translateY(150px) !important;
+                -moz-transform: translateX(40px) translateY(150px) !important;
+                -o-transform: translateX(40px) translateY(150px) !important;
+            }
+        }
+        .cajaRec1{
+            margin-top: 30px;
+        }
+        .cajaRec2{
+            margin-top: -90px;
+            margin-bottom: 30px;
+        }
+        
+        
+    }
+ }

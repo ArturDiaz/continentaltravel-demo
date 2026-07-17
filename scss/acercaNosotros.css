@@ -1,0 +1,329 @@
+#acercaNosotros {
+  margin-top: -60px;
+}
+
+.acercaNosotros, .reconocimiento {
+  padding: 0px 15%;
+}
+
+.acercaNosotros h1, .reconocimiento h1 {
+  text-align: center;
+  color: #003A8F;
+}
+
+.acercaNosotros .contnPrinc, .reconocimiento .contnPrinc {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.acercaNosotros .contnPrinc .fondImg, .reconocimiento .contnPrinc .fondImg {
+  width: 300px;
+  height: 230px;
+  padding-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 500px 230px;
+}
+
+.acercaNosotros .contnPrinc .parrafoLogo, .reconocimiento .contnPrinc .parrafoLogo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 90px;
+  width: 500px;
+  color: #4D4D4D;
+}
+
+.acercaNosotros .contnPrinc .parrafoLogo h1, .reconocimiento .contnPrinc .parrafoLogo h1 {
+  text-align: start;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+  font-size: 20px;
+}
+
+.acercaNosotros .contnPrinc .parrafoLogo p, .reconocimiento .contnPrinc .parrafoLogo p {
+  border-left: 5px solid #DA6207;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+.acercaNosotros .contnPrinc .parrafoLogo .iconos, .reconocimiento .contnPrinc .parrafoLogo .iconos {
+  padding-top: 10px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.acercaNosotros .contnPrinc .parrafoLogo .iconos img, .reconocimiento .contnPrinc .parrafoLogo .iconos img {
+  width: 30px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.acercaNosotros .contnPrinc .imgNstr, .reconocimiento .contnPrinc .imgNstr {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 300px;
+  height: 230px;
+  filter: drop-shadow(2px 2px 2px rgba(77, 77, 77, 0.3));
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(77, 77, 77, 0.3));
+}
+
+.reconocimiento {
+  height: 100%;
+  background: rgba(230, 230, 230, 0.4);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reconocimiento .cajaRec1, .reconocimiento .cajaRec2, .reconocimiento .cajaRec3 {
+  width: 100%;
+  height: 400px;
+  margin: 15px 0;
+  position: relative;
+}
+
+.reconocimiento .cajaRec1 .lineaRec, .reconocimiento .cajaRec2 .lineaRec, .reconocimiento .cajaRec3 .lineaRec {
+  width: 10px;
+  height: 80px;
+  background: #DA6207;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.reconocimiento .cajaRec1 .lineaRec2, .reconocimiento .cajaRec2 .lineaRec2, .reconocimiento .cajaRec3 .lineaRec2 {
+  width: 30px;
+  height: 30px;
+  background: #DA6207;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.reconocimiento .cajaRec1 .contenRecm1, .reconocimiento .cajaRec1 .contenRecm2, .reconocimiento .cajaRec1 .contenRecm3, .reconocimiento .cajaRec2 .contenRecm1, .reconocimiento .cajaRec2 .contenRecm2, .reconocimiento .cajaRec2 .contenRecm3, .reconocimiento .cajaRec3 .contenRecm1, .reconocimiento .cajaRec3 .contenRecm2, .reconocimiento .cajaRec3 .contenRecm3 {
+  background: #fff;
+  width: 40%;
+  height: 200px;
+  padding: 45px;
+  -webkit-box-shadow: 0 0 7px rgba(77, 77, 77, 0.5);
+          box-shadow: 0 0 7px rgba(77, 77, 77, 0.5);
+}
+
+.reconocimiento .cajaRec1 .contenRecm1 h1, .reconocimiento .cajaRec1 .contenRecm2 h1, .reconocimiento .cajaRec1 .contenRecm3 h1, .reconocimiento .cajaRec2 .contenRecm1 h1, .reconocimiento .cajaRec2 .contenRecm2 h1, .reconocimiento .cajaRec2 .contenRecm3 h1, .reconocimiento .cajaRec3 .contenRecm1 h1, .reconocimiento .cajaRec3 .contenRecm2 h1, .reconocimiento .cajaRec3 .contenRecm3 h1 {
+  text-align: start;
+  color: #2c2c2c;
+}
+
+.reconocimiento .cajaRec1 .contenRecm1 h3, .reconocimiento .cajaRec1 .contenRecm2 h3, .reconocimiento .cajaRec1 .contenRecm3 h3, .reconocimiento .cajaRec2 .contenRecm1 h3, .reconocimiento .cajaRec2 .contenRecm2 h3, .reconocimiento .cajaRec2 .contenRecm3 h3, .reconocimiento .cajaRec3 .contenRecm1 h3, .reconocimiento .cajaRec3 .contenRecm2 h3, .reconocimiento .cajaRec3 .contenRecm3 h3 {
+  font-size: 14px;
+  color: #4D4D4D;
+}
+
+.reconocimiento .cajaRec1 .contenRecm1 p, .reconocimiento .cajaRec1 .contenRecm2 p, .reconocimiento .cajaRec1 .contenRecm3 p, .reconocimiento .cajaRec2 .contenRecm1 p, .reconocimiento .cajaRec2 .contenRecm2 p, .reconocimiento .cajaRec2 .contenRecm3 p, .reconocimiento .cajaRec3 .contenRecm1 p, .reconocimiento .cajaRec3 .contenRecm2 p, .reconocimiento .cajaRec3 .contenRecm3 p {
+  margin: 15px 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.reconocimiento .cajaRec1 .contenRecm1, .reconocimiento .cajaRec2 .contenRecm1, .reconocimiento .cajaRec3 .contenRecm1 {
+  transform: translateX(80%) translateY(28%);
+  -webkit-transform: translateX(80%) translateY(28%);
+  -moz-transform: translateX(80%) translateY(28%);
+  -o-transform: translateX(80%) translateY(28%);
+}
+
+.reconocimiento .cajaRec1 .contenRecm2, .reconocimiento .cajaRec2 .contenRecm2, .reconocimiento .cajaRec3 .contenRecm2 {
+  transform: translateX(0%) translateY(13%);
+  -webkit-transform: translateX(0%) translateY(13%);
+  -moz-transform: translateX(0%) translateY(13%);
+  -o-transform: translateX(0%) translateY(13%);
+}
+
+.reconocimiento .cajaRec1 .contenRecm2 .contParr, .reconocimiento .cajaRec2 .contenRecm2 .contParr, .reconocimiento .cajaRec3 .contenRecm2 .contParr {
+  margin: 15px 0;
+  font-size: 12px;
+  color: #4D4D4D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reconocimiento .cajaRec1 .contenRecm2 .contParr ul, .reconocimiento .cajaRec2 .contenRecm2 .contParr ul, .reconocimiento .cajaRec3 .contenRecm2 .contParr ul {
+  list-style: none;
+  position: relative;
+}
+
+.reconocimiento .cajaRec1 .contenRecm2 .contParr ul li, .reconocimiento .cajaRec2 .contenRecm2 .contParr ul li, .reconocimiento .cajaRec3 .contenRecm2 .contParr ul li {
+  padding: 1px 0 1px 15px;
+}
+
+.reconocimiento .cajaRec1 .contenRecm2 .contParr ul li:before, .reconocimiento .cajaRec2 .contenRecm2 .contParr ul li:before, .reconocimiento .cajaRec3 .contenRecm2 .contParr ul li:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid #DA6207;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  left: 0;
+  margin: 3px 0;
+}
+
+.reconocimiento .cajaRec1 .contenRecm3, .reconocimiento .cajaRec2 .contenRecm3, .reconocimiento .cajaRec3 .contenRecm3 {
+  transform: translateX(80%) translateY(0%);
+  -webkit-transform: translateX(80%) translateY(0%);
+  -moz-transform: translateX(80%) translateY(0%);
+  -o-transform: translateX(80%) translateY(0%);
+}
+
+.reconocimiento .cajaRec1 {
+  background: url("../imagen/caja1.png");
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+}
+
+.reconocimiento .cajaRec2 {
+  background: url("../imagen/caja2.png");
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  background-position: 100%;
+  -webkit-background-position: 100%;
+  -moz-background-position: 100%;
+  -o-background-position: 100%;
+}
+
+.reconocimiento .cajaRec3 {
+  background: url("../imagen/caja3.png");
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .contnPrinc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 5%;
+    position: relative;
+  }
+  .contnPrinc .parrafoLogo {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+  .contnPrinc .parrafoLogo .iconos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contnPrinc .fondImg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contnPrinc .imgNstr {
+    width: 330px !important;
+    height: 260px !important;
+    top: 35px !important;
+    left: 0px !important;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .reconocimiento .contRecn {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .acercaNosotros .contnPrinc .parrafoLogo {
+    margin-top: 15px !important;
+  }
+  .acercaNosotros .contnPrinc .parrafoLogo .iconos {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .acercaNosotros .contnPrinc .parrafoLogo .iconos img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .reconocimiento .cajaRec1 .contenRecm1, .reconocimiento .cajaRec1 .contenRecm2, .reconocimiento .cajaRec1 .contenRecm3, .reconocimiento .cajaRec2 .contenRecm1, .reconocimiento .cajaRec2 .contenRecm2, .reconocimiento .cajaRec2 .contenRecm3, .reconocimiento .cajaRec3 .contenRecm1, .reconocimiento .cajaRec3 .contenRecm2, .reconocimiento .cajaRec3 .contenRecm3 {
+    width: 60% !important;
+    height: 170px;
+    margin: 0 0 !important;
+    padding: 40px;
+  }
+  .reconocimiento .cajaRec1 .contenRecm1 h1, .reconocimiento .cajaRec1 .contenRecm2 h1, .reconocimiento .cajaRec1 .contenRecm3 h1, .reconocimiento .cajaRec2 .contenRecm1 h1, .reconocimiento .cajaRec2 .contenRecm2 h1, .reconocimiento .cajaRec2 .contenRecm3 h1, .reconocimiento .cajaRec3 .contenRecm1 h1, .reconocimiento .cajaRec3 .contenRecm2 h1, .reconocimiento .cajaRec3 .contenRecm3 h1 {
+    font-size: 16px;
+  }
+  .reconocimiento .cajaRec1 .contenRecm1 h3, .reconocimiento .cajaRec1 .contenRecm2 h3, .reconocimiento .cajaRec1 .contenRecm3 h3, .reconocimiento .cajaRec2 .contenRecm1 h3, .reconocimiento .cajaRec2 .contenRecm2 h3, .reconocimiento .cajaRec2 .contenRecm3 h3, .reconocimiento .cajaRec3 .contenRecm1 h3, .reconocimiento .cajaRec3 .contenRecm2 h3, .reconocimiento .cajaRec3 .contenRecm3 h3 {
+    font-size: 12px;
+  }
+  .reconocimiento .cajaRec1 .contenRecm1 p, .reconocimiento .cajaRec1 .contenRecm2 p, .reconocimiento .cajaRec1 .contenRecm3 p, .reconocimiento .cajaRec2 .contenRecm1 p, .reconocimiento .cajaRec2 .contenRecm2 p, .reconocimiento .cajaRec2 .contenRecm3 p, .reconocimiento .cajaRec3 .contenRecm1 p, .reconocimiento .cajaRec3 .contenRecm2 p, .reconocimiento .cajaRec3 .contenRecm3 p {
+    margin: 15px 0;
+    color: #666666;
+    font-size: 12px;
+  }
+  .reconocimiento .cajaRec1 .contenRecm1, .reconocimiento .cajaRec1 .contenRecm3, .reconocimiento .cajaRec2 .contenRecm1, .reconocimiento .cajaRec2 .contenRecm3, .reconocimiento .cajaRec3 .contenRecm1, .reconocimiento .cajaRec3 .contenRecm3 {
+    transform: translateX(40px) translateY(100px) !important;
+    -webkit-transform: translateX(40px) translateY(100px) !important;
+    -moz-transform: translateX(40px) translateY(100px) !important;
+    -o-transform: translateX(40px) translateY(100px) !important;
+  }
+  .reconocimiento .cajaRec1 .contenRecm2, .reconocimiento .cajaRec2 .contenRecm2, .reconocimiento .cajaRec3 .contenRecm2 {
+    transform: translateX(40px) translateY(150px) !important;
+    -webkit-transform: translateX(40px) translateY(150px) !important;
+    -moz-transform: translateX(40px) translateY(150px) !important;
+    -o-transform: translateX(40px) translateY(150px) !important;
+  }
+  .reconocimiento .cajaRec1 {
+    margin-top: 30px;
+  }
+  .reconocimiento .cajaRec2 {
+    margin-top: -90px;
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=acercaNosotros.css.map */

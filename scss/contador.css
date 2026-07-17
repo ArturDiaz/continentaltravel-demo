@@ -1,0 +1,243 @@
+.viajPlant {
+  padding: 25px 15%;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*flex-wrap: wrap;*/
+}
+
+.viajPlant .contadMund {
+  width: 350px;
+  padding: 20px 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.viajPlant .contadMund .contadorViaj {
+  height: 100px;
+  margin-top: 25px;
+  padding: 5px;
+  background: rgba(238, 238, 238, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.viajPlant .contadMund .contadorViaj .contadr {
+  width: 100%;
+  height: 85%;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.viajPlant .contadMund .contadorViaj .contadr .cont_inicio {
+  animation: contadorNum 2000ms ease-in-out infinite;
+  -webkit-animation: contadorNum 2000ms ease-in-out infinite;
+}
+
+.viajPlant .contadMund .contadorViaj .contadr .cont_medio {
+  width: 100%;
+  animation: contadorNum 1000ms ease-in-out infinite;
+  -webkit-animation: contadorNum 1000ms ease-in-out infinite;
+}
+
+.viajPlant .contadMund .contadorViaj .contadr .cont_ultim {
+  width: 100%;
+  animation: contadorNum 900ms linear infinite;
+  -webkit-animation: contadorNum 900ms linear infinite;
+}
+
+.viajPlant .contadMund #contadorViaj {
+  overflow: hidden;
+}
+
+.viajPlant .contadMund .indicText {
+  padding-left: 20px;
+  color: #4D4D4D;
+  border-left: 5px solid #DA6207;
+}
+
+.viajPlant .contadMund .indicText p {
+  color: #DA6207;
+}
+
+.viajPlant .contadMund img {
+  width: 100%;
+}
+
+.viajPlant .contadMund .anim-nortAme, .viajPlant .contadMund .anim-sudAme, .viajPlant .contadMund .anim-europ, .viajPlant .contadMund .anim-afric, .viajPlant .contadMund .anim-asia, .viajPlant .contadMund .anim-ocea, .viajPlant .contadMund .anim-paises1, .viajPlant .contadMund .anim-paises2 {
+  width: 20px;
+  height: 30px;
+  background: url("../icon/indicador.png");
+  background-size: 20px 30px;
+  -webkit-background-size: 20px 30px;
+  -moz-background-size: 20px 30px;
+  -o-background-size: 20px 30px;
+  position: absolute;
+}
+
+.viajPlant .contadMund .anim-nortAme .textoM, .viajPlant .contadMund .anim-sudAme .textoM, .viajPlant .contadMund .anim-europ .textoM, .viajPlant .contadMund .anim-afric .textoM, .viajPlant .contadMund .anim-asia .textoM, .viajPlant .contadMund .anim-ocea .textoM, .viajPlant .contadMund .anim-paises1 .textoM, .viajPlant .contadMund .anim-paises2 .textoM {
+  width: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  position: absolute;
+  top: -12px;
+  left: -30px;
+}
+
+.viajPlant .contadMund .anim-nortAme {
+  top: 25px;
+  left: 60px;
+  animation: indicador 4.5s infinite;
+  -webkit-animation: indicador 4.5s infinite;
+  -moz-animation: indicador 4.5s infinite;
+  -o-animation: indicador 4.5s infinite;
+}
+
+.viajPlant .contadMund .anim-sudAme {
+  bottom: 60px;
+  left: 95px;
+  animation: indicador 2.3s infinite;
+  -webkit-animation: indicador 2.3s infinite;
+  -moz-animation: indicador 2.3s infinite;
+  -o-animation: indicador 2.3s infinite;
+}
+
+.viajPlant .contadMund .anim-europ {
+  top: 45px;
+  left: 160px;
+  animation: indicador 6.8s infinite;
+  -webkit-animation: indicador 6.8s infinite;
+  -moz-animation: indicador 6.8s infinite;
+  -o-animation: indicador 6.8s infinite;
+}
+
+.viajPlant .contadMund .anim-afric {
+  top: 85px;
+  left: 170px;
+  animation: indicador 3.5s infinite;
+  -webkit-animation: indicador 3.5s infinite;
+  -moz-animation: indicador 3.5s infinite;
+  -o-animation: indicador 3.5s infinite;
+}
+
+.viajPlant .contadMund .anim-asia {
+  top: 32px;
+  right: 50px;
+  animation: indicador 4.0s infinite;
+  -webkit-animation: indicador 4.0s infinite;
+  -moz-animation: indicador 4s infinite;
+  -o-animation: indicador 4s infinite;
+}
+
+.viajPlant .contadMund .anim-ocea {
+  bottom: 50px;
+  right: 50px;
+  animation: indicador 5.80s infinite;
+  -webkit-animation: indicador 5.8s infinite;
+  -moz-animation: indicador 5.8s infinite;
+  -o-animation: indicador 5.8s infinite;
+}
+
+.viajPlant .contadMund .anim-paises1 {
+  top: 50px;
+  right: 90px;
+  animation: indicador 8.0s infinite;
+  -webkit-animation: indicador 8s infinite;
+  -moz-animation: indicador 8s infinite;
+  -o-animation: indicador 8s infinite;
+}
+
+.viajPlant .contadMund .anim-paises2 {
+  top: 80px;
+  left: 60px;
+  animation: indicador 8.0s infinite;
+  -webkit-animation: indicador 8s infinite;
+  -moz-animation: indicador 8s infinite;
+  -o-animation: indicador 8s infinite;
+}
+
+@media (max-width: 800px) {
+  .viajPlant {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@keyframes indicador {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes indicador {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes contadorNum {
+  0% {
+    transform: translateY(-1800px);
+    -webkit-transform: translateY(-1800px);
+    -moz-transform: translateY(-1800px);
+    -o-transform: translateY(-1800px);
+  }
+  50% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes contadorNum {
+  0% {
+    transform: translateY(-1800px);
+    -webkit-transform: translateY(-1800px);
+    -moz-transform: translateY(-1800px);
+    -o-transform: translateY(-1800px);
+  }
+  50% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
+/*# sourceMappingURL=contador.css.map */

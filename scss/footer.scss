@@ -1,0 +1,112 @@
+$plomo: #8F8F8F;
+$blanco: #fff;
+$azul: #05014a;
+
+footer{
+    background: $plomo;
+    padding: 20px 15%;
+    .logoFoo{
+        width: 100px;
+        height: 50px;
+        background: $azul;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        margin: -20px auto 0 auto;
+        transition: all 0.3s;
+        img{
+            width: 100px;
+            height: 50px;
+        }
+    }
+    .logoFoo:hover{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        transition: all 0.3s;
+    }
+    .sedes{
+        display: flex;
+        justify-content: space-between;
+        color: $blanco;
+        margin: 10px 0;
+        .ubicSe{
+            width: 340px;
+            height: 100px;
+            padding: 0px;
+            margin: 5px 0;
+            display: flex;
+
+            img{
+                width: 70px;
+                height: 60px;
+                align-self: center;
+            }
+            .contSeds{
+                flex-direction: column;
+                align-self: center;
+                h3{
+                    font-size: 14px;
+                    margin-bottom: -5px;
+                    font-weight: normal;
+                }
+                h1{
+                    font-size: 25px;
+                }
+                .sedsTex{
+                    display: flex;
+                    font-size: 13px;
+                    
+                    p{
+                        align-self: center;
+                        font-weight: lighter;
+                    }
+                }
+            }
+            .guion{
+                width: 1px;
+                height: 87px;
+                background: $blanco;
+                margin-right:15px;
+                align-self: center;
+            }
+            
+        }
+    }
+    
+    .contFoot{
+        color: $blanco;
+        padding: 5px 15%;
+        text-align: center;
+    
+        display: flex;
+        justify-content: center;
+        //flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 992px){
+    footer{
+        padding: 25px 5%;
+        .logoFoo{
+            margin-top: -25px;
+        }
+        .sedes{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 550px){
+    footer{
+        padding: 30px 5% !important;
+        .logoFoo{
+            margin-top: -30px;
+        }
+    }
+    .sedes{
+        justify-content: center;
+        color: $blanco;
+        margin: 10px 0;
+    }
+}

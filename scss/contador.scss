@@ -1,0 +1,238 @@
+$blanco : #fff;
+$griss: rgba(230, 230, 230, 0.4);
+$celeste: #0074FF;
+$azul: #003A8F;
+$azulTrs: rgba(0, 57, 143, 0.171);
+$plomo: #4D4D4D;
+$naranja: #DA6207;
+$naranjaTrs: rgba(218, 98, 7, 1);
+
+.viajPlant{
+    padding: 25px 15%;
+    margin: 30px 0;
+
+    display: flex;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+
+    .contadMund{
+        width: 350px;
+        padding: 20px 0;
+        align-content: center;
+
+        position: relative;
+        align-self: center;
+
+        .contadorViaj{
+            height: 100px;
+            margin-top: 25px;
+            padding: 5px;
+            background: rgba(238, 238, 238, 0.8);
+            display: flex;
+            .contadr{
+                //background: red;
+                width: 100%;
+                height: 85%;
+                margin: 5px;
+                overflow: hidden;
+
+                .cont_inicio{
+                    animation: contadorNum 2000ms ease-in-out infinite;
+                    -webkit-animation: contadorNum 2000ms ease-in-out infinite;
+                }
+
+                .cont_medio{
+                    width: 100%;
+                    animation: contadorNum 1000ms ease-in-out infinite;
+                    -webkit-animation: contadorNum 1000ms ease-in-out infinite;
+                }
+
+                .cont_ultim{
+                    width: 100%;
+                    animation: contadorNum 900ms linear infinite;
+                    -webkit-animation: contadorNum 900ms linear infinite;
+                }
+            }
+        }
+        #contadorViaj{
+            
+            overflow: hidden;
+        }
+        .indicText{
+            padding-left: 20px;
+            color: $plomo;
+            border-left: 5px solid $naranja;
+            p{
+                color: $naranja;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        .anim-nortAme, .anim-sudAme, .anim-europ, .anim-afric, .anim-asia, .anim-ocea, .anim-paises1, .anim-paises2{
+            width: 20px;
+            height: 30px;
+            background: url("../icon/indicador.png");
+            background-size: 20px 30px;
+            -webkit-background-size: 20px 30px;
+            -moz-background-size: 20px 30px;
+            -o-background-size: 20px 30px;
+
+            position: absolute;
+
+            .textoM{
+                width: 80px;
+                text-align: center;
+                background: rgba($blanco, 0.8);
+                font-size: 11px;
+                position: absolute;
+                top: -12px;
+                left: -30px;
+            }
+        }
+        .anim-nortAme{
+            top: 25px;
+            left: 60px;
+
+            animation: indicador 4.5s infinite;
+            -webkit-animation: indicador 4.5s infinite;
+            -moz-animation: indicador 4.5s infinite;
+            -o-animation: indicador 4.5s infinite;
+        }
+        .anim-sudAme{
+            bottom: 60px;
+            left: 95px;
+
+            animation: indicador 2.3s infinite;
+            -webkit-animation: indicador 2.3s infinite;
+            -moz-animation: indicador 2.3s infinite;
+            -o-animation: indicador 2.3s infinite;
+        }
+        .anim-europ{
+            top: 45px;
+            left: 160px;
+
+            animation: indicador 6.8s infinite;
+            -webkit-animation: indicador 6.8s infinite;
+            -moz-animation: indicador 6.8s infinite;
+            -o-animation: indicador 6.8s infinite;
+        }
+        .anim-afric{
+            top: 85px;
+            left: 170px;
+
+            animation: indicador 3.5s infinite;
+            -webkit-animation: indicador 3.5s infinite;
+            -moz-animation: indicador 3.5s infinite;
+            -o-animation: indicador 3.5s infinite;
+        }
+        .anim-asia{
+            top: 32px;
+            right: 50px;
+
+            animation: indicador 4.0s infinite;
+            -webkit-animation: indicador 4.0s infinite;
+            -moz-animation: indicador 4s infinite;
+            -o-animation: indicador 4s infinite;
+        }
+        .anim-ocea{
+            bottom: 50px;
+            right: 50px;
+
+            animation: indicador 5.80s infinite;
+            -webkit-animation: indicador 5.8s infinite;
+            -moz-animation: indicador 5.8s infinite;
+            -o-animation: indicador 5.8s infinite;
+        }
+        .anim-paises1{
+            top: 50px;
+            right: 90px;
+
+            animation: indicador 8.0s infinite;
+            -webkit-animation: indicador 8s infinite;
+            -moz-animation: indicador 8s infinite;
+            -o-animation: indicador 8s infinite;
+        }
+        .anim-paises2{
+            top: 80px;
+            left: 60px;
+
+            animation: indicador 8.0s infinite;
+            -webkit-animation: indicador 8s infinite;
+            -moz-animation: indicador 8s infinite;
+            -o-animation: indicador 8s infinite;
+        }
+        
+    }
+
+}
+
+@media (max-width: 800px){
+    .viajPlant{
+        flex-direction: column;
+    }
+}
+
+@keyframes indicador {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-webkit-keyframes indicador {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes contadorNum{
+    0%{
+        transform: translateY(-1800px);
+        -webkit-transform: translateY(-1800px);
+        -moz-transform: translateY(-1800px);
+        -o-transform: translateY(-1800px);
+    }
+    50%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}
+@-webkit-keyframes contadorNum{
+    0%{
+        transform: translateY(-1800px);
+        -webkit-transform: translateY(-1800px);
+        -moz-transform: translateY(-1800px);
+        -o-transform: translateY(-1800px);
+    }
+    50%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}

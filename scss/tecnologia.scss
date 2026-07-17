@@ -1,0 +1,154 @@
+$blanco : #fff;
+$griss: rgba(230, 230, 230, 0.4);
+$celeste: #0074FF;
+$azul: #003A8F;
+$plomo: #4D4D4D;
+
+.tecnologia{
+    background: url("../imagen/fond-tecnol.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+    background-position: center center;
+    -webkit-background-position: center center;
+    -moz-background-position: center center;
+    -o-background-position: center center;
+    
+    background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+
+    padding: 25px 15%;
+
+    .tecnDes{
+        width: 100%;
+
+        display: flex;
+        /*flex-wrap: wrap;*/
+        justify-content: space-between;
+
+        .contDes, .titCont{
+            width: 380px;
+            height: 250px;
+            margin: 25px 0;
+        }
+        .contDes{
+            font-family: 'Quicksand', sans-serif;
+            border: 4px solid $blanco; 
+            padding: 10px; 
+            color: $blanco;
+            position: relative;
+
+            h2{
+                padding: 18px 12px;
+            }
+            p{
+                font-size: 13px;
+                padding: 0px 12px;
+                font-weight: lighter;
+            }
+            h2:before{
+                content:"";
+                width: 100px;
+                height: 50px;
+                background: $azul;
+    
+                position: absolute;
+                top: 0;
+                left: 22px;
+
+                transform: translateY(-25px);
+                -webkit-transform: translateY(-25px);
+                -moz-transform: translateY(-25px);
+            }
+            
+            .imge1, .imge2, .imge3{
+                position: absolute;
+                top: 0;
+                left: 40px;
+            }
+            .imge1{
+                width: 70px;
+                height: 55px;
+                background: url("../imagen/relojIcon-01.png");
+                background-size: 70px 55px;
+
+                transform: translateY(-30px);
+                -webkit-transform: translateY(-30px);
+                -moz-transform: translateY(-30px);
+            }
+            .imge2{
+                width: 70px;
+                height: 55px;
+                background: url("../imagen/avionIcon-a-01.png");
+                background-size: 70px 55px;
+
+                transform: translateY(-30px);
+                -webkit-transform: translateY(-30px);
+                -moz-transform: translateY(-30px);
+            }
+            .imge3{
+                width: 80px;
+                height: 55px;
+                background: url("../imagen/lupaIcon-01.png");
+                background-size: 80px 55px;
+
+                transform: translateY(-30px);
+                -webkit-transform: translateY(-30px);
+                -moz-transform: translateY(-30px);
+            }
+
+        }
+
+        .contDes:hover{
+            transform: rotate(-2deg);     
+            transition: all 0.2s;
+        }
+        .titCont{
+            padding: 0 32px 0 0; 
+            h1{
+                color: $blanco;
+                padding-top: 80px;
+                font-size: 3em;
+            }
+            p{
+                color: $griss;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .tecnDes{
+        
+        .contDes, .titCont{
+            width: 320px !important;
+        }
+    }
+}
+@media (max-width: 800px){
+    .tecnDes{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        
+        .contDes, .titCont{
+            width: 100% !important;
+            height: 275px !important;
+            p{
+                font-size: 14px !important;
+            }
+        }
+
+        .contDes:hover{
+            transform: rotate(0deg) !important;
+            -webkit-transform: rotate(0deg) !important;
+            -moz-transform: rotate(0deg) !important;
+            -o-transform: rotate(0deg) !important;
+        }
+    }
+}
