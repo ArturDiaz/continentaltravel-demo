@@ -206,7 +206,7 @@ nav a:hover::after {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url("/imagen/headerBanner2.jpg") no-repeat, linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--primary-blue) 100%);
+    background: url("../imagen/headerBanner2.jpg") no-repeat, linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--primary-blue) 100%);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -261,34 +261,6 @@ nav a:hover::after {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.hero-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(6px);
-    padding: 0.5rem 1.2rem 0.5rem 0.8rem;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 1.8rem;
-}
-
-.hero-eyebrow .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--accent-blue);
-}
-
-.hero-eyebrow .dot-2 {
-    background: rgba(255, 255, 255, 0.6);
-    margin-left: -0.6rem;
 }
 
 .hero-title {
@@ -1338,10 +1310,6 @@ footer {
 @media (max-width: 640px) {
     .hero-title {
         font-size: 2.2rem;
-    }
-
-    .hero-eyebrow {
-        font-size: 0.7rem;
     }
 
     .hero-actions {
