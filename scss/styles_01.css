@@ -193,7 +193,7 @@ nav a:hover::after {
     border-radius: 25px;
     transition: all 0.3s;
     svg{
-        color: #ed5805;
+        color: white;
         font-size: 20px !important;
         margin: 0 !important;
     }
@@ -202,9 +202,6 @@ nav a:hover::after {
 .phone:hover {
     background: var(--accent-blue);
     transform: translateY(-2px);
-    svg{
-        color: white;
-    }
 }
 
 /* Hero Section */
@@ -269,11 +266,10 @@ nav a:hover::after {
 }
 
 .hero-title {
-    font-size: clamp(1.9rem, 6vw, 4.5rem);
+    font-size: clamp(1.9rem, 4.5vw, 3.4rem);
     font-weight: bold;
     margin-bottom: 1.5rem;
     line-height: 1.2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title .accent {
@@ -316,7 +312,7 @@ nav a:hover::after {
     transition: all 0.3s;
 
     .bs-icon {
-        color: var(--accent-blue);
+        color: white;
         font-size: 1.3rem;
         margin: 0;
     }
@@ -324,10 +320,6 @@ nav a:hover::after {
 
 .hero-phone:hover .hero-phone-icon {
     background: var(--accent-blue);
-
-    .bs-icon {
-        color: white;
-    }
 }
 
 .hero-phone-text {
