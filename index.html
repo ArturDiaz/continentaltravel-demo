@@ -11,6 +11,7 @@
     <title>Continental Travel - Viajes Corporativos</title>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="./scss/styles_01.css">
+    <link rel="stylesheet" href="./scss/scrollReveal.css">
     <link href="icon/favicon.ico" rel="icon">
 </head>
 
@@ -74,8 +75,8 @@
     <!-- Services Section -->
     <section id="servicios" class="services">
         <div class="services-container">
-            <div class="services-header">
-                <span class="services-eyebrow"><span class="dot dot-1"></span><span class="dot dot-2"></span>Nuestro
+            <div class="services-header" data-reveal="fade-up">
+                <span class="services-eyebrow">Nuestro
                     Enfoque</span>
                 <div class="services-header-row">
                     <h2 class="services-title">Soluciones Esenciales para el Éxito Corporativo en Cada Viaje</h2>
@@ -84,18 +85,18 @@
                 </div>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card">
+            <div class="services-grid" data-reveal-group data-reveal-stagger="120">
+                <div class="service-card" data-reveal="fade-up">
                     <div class="service-card-icon"><svg id="i-suitcase" class="bs-icon" viewBox="0 0 32 32"><path d="M9,8 5,8 Q3,8 3,10 L3,23 M 23,8 27,8 Q29,8 29,10 L29,23 M16,6 16,10 M14,8 18,8 M1,24 Q1,28 4,28 L28,28 Q31,28 31,24 L19,24 Q19,26 17,26 L16,26 15,26 Q13,26 13,24 Z"></path><circle cx="16" cy="8" r="5"></circle></svg></div>
                     <h3>Atención Corporativa</h3>
                     <p>Brindamos asesoramiento profesional para viajes de negocios, con toda la comodidad y ahorro.</p>                </div>
 
-                <div class="service-card highlight">
+                <div class="service-card highlight" data-reveal="fade-up">
                     <div class="service-card-icon"><svg id="i-lightning" class="bs-icon" viewBox="0 0 32 32"><path d="M18 13 L26 2 8 13 14 19 6 30 24 19 Z"></path></svg></div>
                     <h3>Incentivos y Grupos</h3>
                     <p>Experiencia calificada en la administración de los gastos anuales en reuniones.</p>                </div>
 
-                <div class="service-card dark">
+                <div class="service-card dark" data-reveal="fade-up">
                     <div class="service-card-icon"><svg id="i-palm" class="bs-icon" viewBox="0 0 32 32"><path d="M16 30 L16 14 M16 14 C16 14 6 12 6 4 M16 14 C16 14 26 12 26 4 M16 18 C16 18 8 17 4 10 M16 18 C16 18 24 17 28 10"></path></svg></div>
                     <h3>Vacaciones Corporativas</h3>
                     <p>Un completo programa de viajes de ocio gestionado íntegramente para sus colaboradores.</p>                </div>
@@ -106,29 +107,25 @@
     <!-- About + Mission & Vision Section -->
     <section id="nosotros" class="about">
         <div class="about-container">
-            <div class="about-header">
-                <span class="about-eyebrow"><span class="dot dot-1"></span><span class="dot dot-2"></span>Acerca de
+            <div class="about-header" data-reveal="fade-up">
+                <span class="about-eyebrow">Acerca de
                     Nosotros</span>
-                <h2>Más de 31 Años Impulsando el Éxito de tu Empresa</h2>
+                <h2>Más de 31 Años liderando los viajes corporativos en el Perú</h2>
             </div>
 
             <div class="about-body">
-                <div class="about-media">
-                    <div class="about-img about-img-1"
-                        style="background-image: url('./wp-content/uploads/2020/12/img-quienes-somos-continental-01-capacitacion.png');">
-                    </div>
+                <div class="about-media" data-reveal="fade-right">
+                    <div class="about-img about-img-1"></div>
                     <div class="about-media-lower">
                         <div class="about-badge">
                             <strong>31+</strong>
                             <span>Años de<br>Experiencia</span>
                         </div>
-                        <div class="about-img about-img-2"
-                            style="background-image: url('./wp-content/uploads/2020/12/img-quienes-somos-continental-01-hombre-con-laptop.png');">
-                        </div>
+                        <div class="about-img about-img-2"></div>
                     </div>
                 </div>
 
-                <div class="about-values">
+                <div class="about-values" data-reveal="fade-left">
                     <p class="about-lead">Con más de 31 años de experiencia en el sector de viajes corporativos,
                         Continental Travel se ha consolidado como líder en soluciones de viaje para empresas. Nuestra
                         trayectoria nos respalda y nuestro compromiso con la excelencia nos impulsa.</p>
@@ -155,23 +152,23 @@
                 </div>
             </div>
 
-            <div class="about-stats">
-                <div class="stat-item">
+            <div class="about-stats" data-reveal-group data-reveal-stagger="100">
+                <div class="stat-item" data-reveal="fade-up">
                     <strong>31+</strong>
                     <span>Años de Experiencia Empresarial</span>
                 </div>
                 <svg class="stat-divider" viewBox="0 0 24 24"><path d="M9 6 L15 12 9 18"></path></svg>
-                <div class="stat-item">
+                <div class="stat-item" data-reveal="fade-up">
                     <strong>Global</strong>
                     <span>Alianzas con Aerolíneas y Hoteles</span>
                 </div>
                 <svg class="stat-divider" viewBox="0 0 24 24"><path d="M9 6 L15 12 9 18"></path></svg>
-                <div class="stat-item">
+                <div class="stat-item" data-reveal="fade-up">
                     <strong>IATA</strong>
                     <span>Certificación Internacional</span>
                 </div>
                 <svg class="stat-divider" viewBox="0 0 24 24"><path d="M9 6 L15 12 9 18"></path></svg>
-                <div class="stat-item">
+                <div class="stat-item" data-reveal="fade-up">
                     <strong>24/7</strong>
                     <span>Soporte al Cliente</span>
                 </div>
@@ -183,8 +180,8 @@
     <section id="tecnologia" class="certifications">
         <div class="cert-container">
             <div class="cert-layout">
-                <div class="cert-intro">
-                    <span class="cert-eyebrow"><span class="dot dot-1"></span><span class="dot dot-2"></span>Tecnología</span>
+                <div class="cert-intro" data-reveal="fade-right">
+                    <span class="cert-eyebrow">Tecnología</span>
                     <h2>Certificaciones que Respaldan Nuestro Servicio</h2>
                     <p class="section-subtitle">Respaldados por las mejores certificaciones y tecnología de punta</p>
 
@@ -217,8 +214,8 @@
                     </svg>
                 </div>
 
-                <div class="cert-list">
-                    <div class="cert-row">
+                <div class="cert-list" data-reveal-group data-reveal-stagger="120">
+                    <div class="cert-row" data-reveal="fade-left">
                         <div class="cert-row-text">
                             <span class="cert-row-label">Certificación internacional</span>
                             <h3>IATA</h3>
@@ -227,7 +224,7 @@
                         <span class="cert-row-arrow"><img src="./imagen/logos/iata-2.svg" alt="IATA"></span>
                     </div>
 
-                    <div class="cert-row">
+                    <div class="cert-row" data-reveal="fade-left">
                         <div class="cert-row-text">
                             <span class="cert-row-label">Certificación de calidad</span>
                             <h3>SGS</h3>
@@ -236,7 +233,7 @@
                         <span class="cert-row-arrow"><svg id="i-lock" class="bs-icon" viewBox="0 0 32 32"><path d="M5 15 L5 30 27 30 27 15 Z M9 15 C9 9 9 5 16 5 23 5 23 9 23 15 M16 20 L16 23"></path><circle cx="16" cy="24" r="1"></circle></svg></span>
                     </div>
 
-                    <div class="cert-row">
+                    <div class="cert-row" data-reveal="fade-left">
                         <div class="cert-row-text">
                             <span class="cert-row-label">Aplicación móvil</span>
                             <h3>ContiGO</h3>
@@ -252,14 +249,14 @@
     <!-- Contact / FAQ Section -->
     <section id="contacto" class="contact">
         <div class="contact-container">
-            <div class="contact-header">
-                <span class="contact-eyebrow"><span class="dot dot-1"></span><span class="dot dot-2"></span>Preguntas & Contactos</span>
+            <div class="contact-header" data-reveal="fade-up">
+                <span class="contact-eyebrow">Preguntas & Contactos</span>
                 <h2>¿Tienes Dudas? Aquí las Resolvemos</h2>
             </div>
 
             <div class="contact-layout">
-                <div class="faq-list">
-                    <div class="faq-item">
+                <div class="faq-list" data-reveal-group data-reveal-stagger="80">
+                    <div class="faq-item" data-reveal="fade-up">
                         <button class="faq-question" type="button">
                             <span>¿Qué servicios de viajes corporativos ofrecen?</span>
                             <span class="faq-icon"></span>
@@ -271,7 +268,7 @@
                         </div>
                     </div>
 
-                    <div class="faq-item active">
+                    <div class="faq-item active" data-reveal="fade-up">
                         <button class="faq-question" type="button">
                             <span>¿En qué se especializan?</span>
                             <span class="faq-icon"></span>
@@ -283,7 +280,7 @@
                         </div>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="faq-item" data-reveal="fade-up">
                         <button class="faq-question" type="button">
                             <span>¿Cuentan con certificación IATA?</span>
                             <span class="faq-icon"></span>
@@ -294,7 +291,7 @@
                         </div>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="faq-item" data-reveal="fade-up">
                         <button class="faq-question" type="button">
                             <span>¿Qué es ContiGO?</span>
                             <span class="faq-icon"></span>
@@ -305,7 +302,7 @@
                         </div>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="faq-item" data-reveal="fade-up">
                         <button class="faq-question" type="button">
                             <span>¿Ofrecen soporte fuera del horario de oficina?</span>
                             <span class="faq-icon"></span>
@@ -316,7 +313,7 @@
                         </div>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="faq-item" data-reveal="fade-up">
                         <button class="faq-question" type="button">
                             <span>¿Cómo me pongo en contacto con ustedes?</span>
                             <span class="faq-icon"></span>
@@ -328,7 +325,7 @@
                     </div>
                 </div>
 
-                <div class="contact-side">
+                <div class="contact-side" data-reveal="fade-left">
                     <div class="contact-card">
                         <div class="contact-card-icon">
                             <svg id="i-message" class="bs-icon" viewBox="0 0 32 32">
@@ -400,7 +397,7 @@
 
             <div class="footer-section">
                 <h3>Contacto</h3>
-                <p><div class="flex-r gap-1">
+                <p><div class="flex-r gap-1 ai-c">
                     <svg id="i-call-center" class="bs-icon" viewBox="0 0 32 32">
                         <g>
                             <path d="M4.5,11 C4,-2.5 28,-2.5 27.5,11 M27,22 Q26,27 20,29.5 
@@ -412,7 +409,7 @@
                     <a href="tel:+5114155050">+511 415-5050</a>
                 </div> </p>
                 <p>
-                    <div class="flex-r gap-1">
+                    <div class="flex-r gap-1 ai-c">
                         <svg id="i-message" class="bs-icon" viewBox="0 0 32 32">
                                 <g>
                                     <rect x="2" y="6" width="28" height="20" rx="5" ry="5"></rect>
@@ -421,7 +418,7 @@
                             </svg> <a href="mailto:Comercial@continentaltravel.com.pe">Comercial@continentaltravel.com.pe</a></p>
                     </div>
                 <p>
-                    <div class="flex-r gap-1"><svg id="i-indicador" class="bs-icon" viewBox="0 0 32 32">
+                    <div class="flex-r gap-1 ai-c"><svg id="i-indicador" class="bs-icon" viewBox="0 0 32 32">
                     <g>
                         <circle cx="16" cy="13" r="5"></circle>
                         <path d="M16 31 6 21 C1 16 2 1 16 1 C30 1 31 16 26 21 Z"></path>
@@ -435,6 +432,7 @@
         </div>
     </footer>
     <script src="./js/scriptCss.js"></script>
+    <script src="./js/scrollReveal.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -471,29 +469,6 @@
                 }
             });
 
-            // Animate on scroll
-            function checkScroll() {
-                $('.service-card, .value-row, .cert-row, .faq-item').each(function () {
-                    var elementTop = $(this).offset().top;
-                    var windowBottom = $(window).scrollTop() + $(window).height();
-
-                    if (elementTop < windowBottom - 100) {
-                        $(this).css({
-                            'opacity': '1',
-                            'transform': 'translateY(0)'
-                        });
-                    }
-                });
-            }
-
-            $('.service-card, .value-row, .cert-row, .faq-item').css({
-                'opacity': '0',
-                'transform': 'translateY(30px)',
-                'transition': 'all 0.6s ease'
-            });
-
-            $(window).on('scroll', checkScroll);
-            checkScroll();
         });
     </script>
 </body>
