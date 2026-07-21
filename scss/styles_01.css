@@ -219,9 +219,7 @@ nav a:hover::after {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url("../imagen/headerBanner2-desktop.jpg") no-repeat, linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--primary-blue) 100%);
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--primary-blue) 100%);
     position: relative;
     display: flex;
     align-items: center;
@@ -232,6 +230,32 @@ nav a:hover::after {
     overflow: hidden;
 }
 
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: url("../imagen/headerBanner2-desktop.jpg") no-repeat center center;
+    background-size: cover;
+    animation: heroKenBurns 22s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+@keyframes heroKenBurns {
+    from {
+        transform: scale(1) translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: scale(1.15) translate3d(-2%, -1.5%, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-bg {
+        animation: none;
+    }
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -239,6 +263,7 @@ nav a:hover::after {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
     background:
         linear-gradient(45deg, transparent 48%, rgba(59, 130, 246, 0.1) 49%, rgba(59, 130, 246, 0.1) 51%, transparent 52%),
         linear-gradient(-45deg, transparent 48%, rgba(59, 130, 246, 0.1) 49%, rgba(59, 130, 246, 0.1) 51%, transparent 52%);
@@ -258,7 +283,7 @@ nav a:hover::after {
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 900px;
     min-width: 0;
     padding: 2rem;
@@ -1277,8 +1302,8 @@ footer {
 }
 
 @media (max-width: 640px) {
-    .hero {
-        background-image: url("../imagen/headerBanner2-mobile.jpg"), linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--primary-blue) 100%);
+    .hero-bg {
+        background-image: url("../imagen/headerBanner2-mobile.jpg");
     }
 
     .hero-actions {
